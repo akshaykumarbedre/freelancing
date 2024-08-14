@@ -12,11 +12,12 @@
             background-size:     cover;                      
             background-repeat:   no-repeat;
             background-position: center center;  
+            background-origin:inherit;
         }
     </style>
 </head>
 <body>
-    <div class="coverimage">
+    <div class="coverimage" , id="hero">
     <header class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
             <a class="navbar-brand" href="#">Akshay Kumar BM</a>
@@ -26,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Domains</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Domains">Domains</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Projest">Projest</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -104,7 +105,7 @@
             </div>
         </section>
 
-        <section class="our-features">
+        <section class="our-features" id="Services">
             <div class="container">
                 <h2 class="text-center mb-5">Our Services</h2>
                 <div class="row">
@@ -140,7 +141,7 @@
             </div>
         </section>
         
-        <section class="services">
+        <section class="services" id="Domains">
             <div class="container">
                 <h2 class="text-center mb-5">Domains We Specialize In</h2>
                 <p class="text-center mb-5">Our machine learning solutions are tailored to meet the unique challenges of various industries.</p>
@@ -177,7 +178,7 @@
             </div>
         </section>
         
-        <section class="our-projects">
+        <section class="our-projects" id="Projest">
             <div class="container">
                 <h2 class="text-center mb-5">Featured Projects</h2>
                 <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -186,8 +187,8 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <img src="project1.jpg" alt="Financial Forecasting" class="img-fluid">
-                                    <h5>Financial Forecasting Model</h5>
-                                    <p>Developed a machine learning model for accurate financial forecasting, improving decision-making accuracy by 25%.</p>
+                                    <h5>Backorder Prediction System</h5>
+                                    <p>Developed a machine learning model to predict product backorders, improving inventory management and reducing stockouts by 35%.</p>
                                 </div>
                                 <div class="col-md-3">
                                     <img src="project2.jpg" alt="Customer Segmentation" class="img-fluid">
@@ -196,13 +197,13 @@
                                 </div>
                                 <div class="col-md-3">
                                     <img src="project3.jpg" alt="Predictive Maintenance" class="img-fluid">
-                                    <h5>Predictive Maintenance System</h5>
-                                    <p>Implemented a predictive maintenance solution for a manufacturing client, reducing downtime by 60%.</p>
+                                    <h5>Realtime-Stock-Analysis</h5>
+                                    <p>Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis</p>
                                 </div>
                                 <div class="col-md-3">
                                     <img src="project4.jpg" alt="NLP Chatbot" class="img-fluid">
-                                    <h5>Advanced NLP Chatbot</h5>
-                                    <p>Developed an AI-powered chatbot using NLP, improving customer service efficiency by 50%.</p>
+                                    <h5>Real-time Sentiment Analysis App</h5>
+                                    <p>Developed a Python app using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of spoken or written text.</p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +222,7 @@
         </section>
         
     </main>
-    <footer class="bg-primary text-white">
+    <footer class="bg-primary text-white" id="Contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -231,9 +232,9 @@
                 <div class="col-md-3">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Domains</a></li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Domains">Domains</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
