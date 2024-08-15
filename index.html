@@ -185,31 +185,44 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-md-3">
-                                    <img src="project1.jpg" alt="Financial Forecasting" class="img-fluid">
+                                <div class="col-md-3 project-item">
+                                    <img src="image/backorder-image.jpg" alt="Backorder Prediction System" class="img-fluid">
                                     <h5>Backorder Prediction System</h5>
                                     <p>Developed a machine learning model to predict product backorders, improving inventory management and reducing stockouts by 35%.</p>
+                                    <button type="button" class="btn btn-primary more-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Backorder Prediction System" data-img="image/backorder-image.jpg" data-description="Developed a machine learning model to predict product backorders, improving inventory management and reducing stockouts by 35%.">More</button>
                                 </div>
-                                <div class="col-md-3">
-                                    <img src="project2.jpg" alt="Customer Segmentation" class="img-fluid">
-                                    <h5>Customer Segmentation for Retail</h5>
-                                    <p>Created a sophisticated segmentation model, increasing marketing ROI by 40% through targeted campaigns.</p>
+                                <div class="col-md-3 project-item">
+                                    <img src="image/Financial.jpg" alt="Financial Analysis and Portfolio Management Platform" class="img-fluid">
+                                    <h5>Financial Analysis and Portfolio Management Platform</h5>
+                                    <p>Developed a AI based web application integrating stock screening, portfolio allocation recommendations. Achieved enhanced user engagement through real-time stock data visualization and personalized investment advice.</p>
+                                    <button type="button" class="btn btn-primary more-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Financial Analysis and Portfolio Management Platform" data-img="image/Financial.jpg" data-description="Developed a AI based web application integrating stock screening, portfolio allocation recommendations. Achieved enhanced user engagement through real-time stock data visualization and personalized investment advice.">More</button>
                                 </div>
-                                <div class="col-md-3">
-                                    <img src="project3.jpg" alt="Predictive Maintenance" class="img-fluid">
+                                <div class="col-md-3 project-item">
+                                    <img src="project3.jpg" alt="Realtime-Stock-Analysis" class="img-fluid">
                                     <h5>Realtime-Stock-Analysis</h5>
                                     <p>Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis</p>
+                                    <button type="button" class="btn btn-primary more-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Realtime-Stock-Analysis" data-img="project3.jpg" data-description="Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis">More</button>
                                 </div>
-                                <div class="col-md-3">
-                                    <img src="project4.jpg" alt="NLP Chatbot" class="img-fluid">
+                                <div class="col-md-3 project-item">
+                                    <img src="project4.jpg" alt="Real-time Sentiment Analysis App" class="img-fluid">
                                     <h5>Real-time Sentiment Analysis App</h5>
                                     <p>Developed a Python app using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of spoken or written text.</p>
+                                    <button type="button" class="btn btn-primary more-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Real-time Sentiment Analysis App" data-img="project4.jpg" data-description="Developed a Python app using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of spoken or written text.">More</button>
                                 </div>
                             </div>
                         </div>
-                        <!-- Add more carousel-item divs here for more projects -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3 project-item">
+                                    <img src="project4.jpg" alt="Telegram-Based Referral Program Bot" class="img-fluid">
+                                    <h5>Telegram-Based Referral Program Bot</h5>
+                                    <p>Developed an advanced Telegram bot to automate refer-and-earn programs using asynchronous programming. This automation increased user engagement by 50% and successful referrals by 30%, streamlining the process and reducing manual tasks.</p>
+                                    <button type="button" class="btn btn-primary more-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Telegram-Based Referral Program Bot" data-img="image\telegram_git12.gif" data-description="Developed an advanced Telegram bot to automate refer-and-earn programs using asynchronous programming. This automation increased user engagement by 50% and successful referrals by 30%, streamlining the process and reducing manual tasks.">More</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
+                    <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev" >
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </a>
@@ -219,7 +232,22 @@
                     </a>
                 </div>
             </div>
-        </section>
+        
+            <!-- Project Modal -->
+            <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="" alt="Project Image" class="img-fluid" id="projectModalImg">
+                            <p id="projectModalDesc"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>>
         
     </main>
     <footer class="bg-primary text-white" id="Contact">

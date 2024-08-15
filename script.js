@@ -67,3 +67,21 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Background image:', getComputedStyle(coverImage).backgroundImage);
     console.log('Element dimensions:', coverImage.offsetWidth, 'x', coverImage.offsetHeight);
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const moreButtons = document.querySelectorAll('.more-btn');
+    const modalTitle = document.getElementById('projectModalLabel');
+    const modalImg = document.getElementById('projectModalImg');
+    const modalDesc = document.getElementById('projectModalDesc');
+
+    moreButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const title = this.getAttribute('data-title');
+            const imgSrc = this.getAttribute('data-img');
+            const description = this.getAttribute('data-description');
+
+            modalTitle.textContent = title;
+            modalImg.src = imgSrc;
+            modalDesc.textContent = description;
+        });
+    });
+});
