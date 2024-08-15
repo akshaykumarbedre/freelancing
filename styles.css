@@ -173,17 +173,7 @@ body {
     margin-bottom: 20px;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    width: 5%;
-    opacity: 1;
-}
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #007bff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
 
 footer {
     background-color: #0066cc; /* Base blue color */
@@ -220,4 +210,14 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.project-item {
+    position: relative;
+    padding-bottom: 40px; /* Add space for the button */
+}
+.more-btn {
+    position: absolute;
+ 
+    right: 0;
 }
