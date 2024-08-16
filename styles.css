@@ -100,6 +100,9 @@ body {
 
 .stat-item {
     text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .stat-item h3 {
@@ -173,6 +176,10 @@ body {
     margin-bottom: 20px;
 }
 
+.service-item p{
+    text-align: left;
+   
+}
 
 
 footer {
@@ -214,10 +221,11 @@ footer a:hover {
 
 .project-item {
     position: relative;
-    padding-bottom: 40px; /* Add space for the button */
+    padding-bottom: 70PX; /* Add space for the button */
+    
 }
 .more-btn {
     position: absolute;
  
-    right: 0;
+    right: 15px;
 }

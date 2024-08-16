@@ -11,10 +11,13 @@
             background-image: url("pikaso_embed.webp");
             background-size:     cover;                      
             background-repeat:   no-repeat;
-            background-position: center center;  
-            background-origin:inherit;
+            background-position: left center;  
+            background-origin:border-box;
         }
+
+
     </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
 </head>
 <body>
     <div class="coverimage" , id="hero">
@@ -43,7 +46,7 @@
                     <div class="col-md-6">
                         <h1>Custom Machine Learning Solutions</h1>
                         <p>I'm Akshay Kumar BM, a data scientist specializing in tailored machine learning solutions for various industries. Let's transform your data into actionable insights.</p>
-                        <a href="#contact" class="btn btn-primary rounded-pill">Get Started</a>
+                        <a href="#Services" class="btn btn-primary rounded-pill">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -79,13 +82,13 @@
             </div>
         </section>
 
-        <section class="success-stats bg-primary text-white">
+        <section class="success-stats bg-primary text-white ">
             <div class="container">
                 <h2>Our Impact</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="stat-item">
-                            <h3 class="add">20+</h3>
+                            <h3 class="add">15+</h3>
                             <p>ML projects successfully deployed</p>
                         </div>
                     </div>
@@ -181,10 +184,16 @@
         <section class="our-projects" id="Projest">
             <div class="container">
                 <h2 class="text-center mb-5">Featured Projects</h2>
-                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+  
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
+                                <div class="col-md-3 project-item">
+                                    <img src="image\Real-time-stock-filter.jpg" alt="Realtime-Stock-Analysis" class="img-fluid">
+                                    <h5>Realtime-Stock-Analysis</h5>
+                                    <p>Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis</p>
+                                    <button type="button" class="btn btn-primary more-btn rounded-pill " data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Realtime-Stock-Analysis" data-img="image\Real-time-stock-filter.jpg" data-description="Achieved a 70% compound annual growth rate (CAGR) with 80% accuracy by selecting top-performing stocks through a time series analysis with a five-year historical backtest. This project demonstrates a robust approach to identifying high-growth investment opportunities based on detailed historical data.">More</button>
+                                </div>
                                 <div class="col-md-3 project-item">
                                     <img src="image/backorder-image.jpg" alt="Backorder Prediction System" class="img-fluid">
                                     <h5>Backorder Prediction System</h5>
@@ -198,31 +207,21 @@
                                     <button type="button" class="btn btn-primary more-btn rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Financial Analysis and Portfolio Management Platform" data-img="image/Financial.jpg" data-description="Developed a AI based web application integrating stock screening, portfolio allocation recommendations. Achieved enhanced user engagement through real-time stock data visualization and personalized investment advice.">More</button>
                                 </div>
                                 <div class="col-md-3 project-item">
-                                    <img src="project3.jpg" alt="Realtime-Stock-Analysis" class="img-fluid">
-                                    <h5>Realtime-Stock-Analysis</h5>
-                                    <p>Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis</p>
-                                    <button type="button" class="btn btn-primary more-btn rounded-pill " data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Realtime-Stock-Analysis" data-img="project3.jpg" data-description="Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis">More</button>
-                                </div>
-                                <div class="col-md-3 project-item">
                                     <img src="image\telegram_bot.jpg" alt="Telegram-Based Referral Program Bot" class="img-fluid">
                                     <h5>Telegram-Based Referral Program Bot</h5>
                                     <p>Developed an advanced Telegram bot to automate refer-and-earn programs using asynchronous programming. This automation increased user engagement by 50% and successful referrals by 30%, streamlining the process and reducing manual tasks.</p>
                                     <button type="button" class="btn btn-primary more-btn rounded-pill " data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Telegram-Based Referral Program Bot" data-img="image\telegram_git123.gif" data-description="Developed an advanced Telegram bot to automate refer-and-earn programs using asynchronous programming. This automation increased user engagement by 50% and successful referrals by 30%, streamlining the process and reducing manual tasks.">More</button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
                                 <div class="col-md-3 project-item">
-                                    <img src="image\Sentiment-anylisis.jpeg" alt="Real-time Sentiment Analysis App" class="img-fluid">
-                                    <h5>Real-time Sentiment Analysis App</h5>
-                                    <p>Developed a Python app using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of spoken or written text.</p>
-                                    <button type="button" class="btn btn-primary more-btn rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Real-time Sentiment Analysis App" data-img="image\Sentiment-anylisis.jpeg" data-description="Developed a Python app using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of spoken or written text.">More</button>
+                                    <img src="image\Sentiment-anylisis.jpeg" alt="Customer Feedback Analysis Application" class="img-fluid">
+                                    <h5>Customer Feedback Analysis Application</h5>
+                                    <p>Developed a Python application using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of customer feedback in real-time. </p>
+                                    <button type="button" class="btn btn-primary more-btn rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Customer Feedback Analysis Application" data-img="image\Sentiment-anylisis.jpeg" data-description="Developed a Python application using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of customer feedback in real-time. This tool provides businesses with actionable insights into customer sentiment, helping improve products and services based on detailed emotional analysis.">More</button>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
-                    
                 </div>
             </div>
         
@@ -240,7 +239,8 @@
                         </div>
                     </div>
                 </div>
-            </div>>
+            </div>
+        </section>
         
     </main>
     <footer class="bg-primary text-white" id="Contact">
@@ -267,7 +267,11 @@
                 </div>
                 <div class="col-md-3">
                     <h5>Follow Us</h5>
-                    <!-- Add social media icons -->
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/akshay-kumar-bm" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/akshaykumarbedre" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <!-- Add more social media links as needed -->
+                    </ul>
                 </div>
             </div>
         </div>
