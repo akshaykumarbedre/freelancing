@@ -85,3 +85,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const isOpen = answer.style.display === 'block';
+        
+        // Close all other answers
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+        document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+        
+        // Toggle current answer
+        answer.style.display = isOpen ? 'none' : 'block';
+        question.classList.toggle('active', !isOpen);
+    });
+});

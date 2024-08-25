@@ -221,6 +221,206 @@ footer a:hover {
 
 .project-item {
     position: relative;
-    padding-bottom: 70PX; /* Add space for the button */
+    padding-bottom: 70PX; 
     
 }
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #0055bb;
+    --tertiary-color: #0044aa;
+    --text-color: #333;
+    --light-text-color: #666;
+    --background-color: #fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    --text-color: #f0f0f0;
+    --light-text-color: #ccc;
+    --background-color: #222;
+}
+
+.coverimage { 
+    background-image: url("pikaso_embed.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-origin: border-box;
+}
+
+.navbar {
+    padding: 1.25rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-right: 1.25rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+}
+
+.hero {
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: var(--light-text-color);
+    margin-bottom: 1.875rem;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.feature-item, .service-item, .domain-item, .skill-item {
+    background-color: var(--background-color);
+    padding: 1.875rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s;
+    margin-bottom: 1.875rem;
+}
+
+.feature-item:hover, .service-item:hover, .domain-item:hover, .skill-item:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.success-stats {
+    padding: 3.75rem 0;
+    background-image: linear-gradient(
+        135deg,
+        var(--primary-color) 0%,
+        var(--primary-color) 50%,
+        var(--secondary-color) 50%,
+        var(--secondary-color) 60%,
+        var(--tertiary-color) 60%,
+        var(--tertiary-color) 100%
+    );
+    color: white;
+    border-radius: 1.875rem;
+    margin: 3.75rem;
+}
+
+footer {
+    background-image: linear-gradient(
+        135deg,
+        var(--primary-color) 0%,
+        var(--primary-color) 50%,
+        var(--secondary-color) 50%,
+        var(--secondary-color) 60%,
+        var(--tertiary-color) 60%,
+        var(--tertiary-color) 100%
+    );
+    color: white;
+    padding: 3.75rem 0;
+}
+.faq {
+    font-family: Arial, sans-serif;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.faq h1 {
+    font-size: 36px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-question {
+    font-size: 18px;
+    color: #333;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 24px;
+    color: #666;
+}
+
+.faq-question.active::after {
+    content: '-';
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 0;
+    color: #666;
+    line-height: 1.6;
+}
+#about.about-me {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about.about-me .container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  @media (max-width: 768px) {
+    #about.about-me .container {
+      flex-direction: column;
+    }
+  
+    #about.about-me .image {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
+
+
