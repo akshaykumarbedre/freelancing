@@ -98,4 +98,20 @@ document.querySelectorAll('.faq-question').forEach(question => {
         answer.style.display = isOpen ? 'none' : 'block';
         question.classList.toggle('active', !isOpen);
     });
+});document.addEventListener('DOMContentLoaded', function() {
+    var projectModal = document.getElementById('projectModal');
+    projectModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var title = button.getAttribute('data-title');
+        var img = button.getAttribute('data-img');
+        var description = button.getAttribute('data-description');
+        
+        var modalTitle = projectModal.querySelector('.modal-title');
+        var modalImg = projectModal.querySelector('#projectModalImg');
+        var modalDesc = projectModal.querySelector('#projectModalDesc');
+        
+        modalTitle.textContent = title;
+        modalImg.src = img;
+        modalDesc.textContent = description;
+    });
 });

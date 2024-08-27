@@ -20,10 +20,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-    
-                        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-    
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>    
+                        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>    
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -47,16 +45,19 @@
         <section id="about" class="about-me">
             <div class="container">
                 <div class="col-md-6 about-me_info">
-                  <h1>HEY, I'M AKSHAY <span>👋</span></h1>
-                  <p>I'm Akshay Kumar BM, a data scientist passionate about turning ideas into intelligent solutions. Since January 2023, I've specialized in crafting custom machine learning models that solve real-world challenges. With expertise in mathematics, programming, and data science, I bring precision and creativity to every project. Whether it's real-time financial analysis, AI tools, or business optimization, I deliver impactful results. Let's turn your vision into reality..</p>
-
+                    <h1>HEY, I'M AKSHAY <span>👋</span></h1>
+                    <p>
+                        I'm Akshay Kumar BM, a data scientist passionate about turning ideas into intelligent solutions. 
+                        Since January 2023, I've specialized in crafting custom machine learning models that solve 
+                        real-world challenges. With expertise in mathematics, programming, and data science, I bring 
+                        precision and creativity to every project. Whether it's real-time financial analysis, AI tools, 
+                        or business optimization, I deliver impactful results. Let's turn your vision into reality.
+                    </p>
                 </div>
-                <div class="col-md-6 text-rigth text-md-end">
-                    <img src="image\profile.png" alt="Akshay's image">
-
+                <div class="col-md-6 text-right text-md-end image">
+                    <img src="image/profile.png" alt="Akshay's image">
                 </div>
-                
-            </div>    
+            </div>
         </section>
 
         <section id="achievements" class="success-stats bg-primary text-white">
@@ -161,64 +162,90 @@
         <section class="our-projects" id="work">
             <div class="container">
                 <h2 class="text-center mb-5">Featured Work</h2>
-  
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-3 project-item">
-                                    <img src="image\Real-time-stock-filter.jpg" alt="Realtime-Stock-Analysis" class="img-fluid">
-                                    <h5>Realtime-Stock-Analysis</h5>
-                                    <p>Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis</p>
-                                    <button type="button" class="btn btn-primary more-btn rounded-pill " data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Realtime-Stock-Analysis" data-img="image\Real-time-stock-filter.jpg" data-description="Achieved a 70% compound annual growth rate (CAGR) with 80% accuracy by selecting top-performing stocks through a time series analysis with a five-year historical backtest. This project demonstrates a robust approach to identifying high-growth investment opportunities based on detailed historical data.">More</button>
-                                </div>
-                                <div class="col-md-3 project-item">
-                                    <img src="image/backorder-image.jpg" alt="Backorder Prediction System" class="img-fluid">
-                                    <h5>Backorder Prediction System</h5>
-                                    <p>Developed a machine learning model to predict product backorders, improving inventory management and reducing stockouts by 35%.</p>
-                                    <button type="button" class="btn btn-primary more-btn rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Backorder Prediction System" data-img="image/backorder-image.jpg" data-description="Developed a machine learning model to predict product backorders, improving inventory management and reducing stockouts by 35%.">More</button>
-                                </div>
-                                <div class="col-md-3 project-item">
-                                    <img src="image/Financial.jpg" alt="Financial Analysis and Portfolio Management Platform" class="img-fluid">
-                                    <h5>Financial Analysis and Portfolio Management Platform</h5>
-                                    <p>Developed a AI based web application integrating stock screening, portfolio allocation recommendations. Achieved enhanced user engagement through real-time stock data visualization and personalized investment advice.</p>
-                                    <button type="button" class="btn btn-primary more-btn rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Financial Analysis and Portfolio Management Platform" data-img="image/Financial.jpg" data-description="Developed a AI based web application integrating stock screening, portfolio allocation recommendations. Achieved enhanced user engagement through real-time stock data visualization and personalized investment advice.">More</button>
-                                </div>
-                                <div class="col-md-3 project-item">
-                                    <img src="image\telegram_bot.jpg" alt="Telegram-Based Referral Program Bot" class="img-fluid">
-                                    <h5>Telegram-Based Referral Program Bot</h5>
-                                    <p>Developed an advanced Telegram bot to automate refer-and-earn programs using asynchronous programming. This automation increased user engagement by 50% and successful referrals by 30%, streamlining the process and reducing manual tasks.</p>
-                                    <button type="button" class="btn btn-primary more-btn rounded-pill " data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Telegram-Based Referral Program Bot" data-img="image\telegram_git123.gif" data-description="Developed an advanced Telegram bot to automate refer-and-earn programs using asynchronous programming. This automation increased user engagement by 50% and successful referrals by 30%, streamlining the process and reducing manual tasks.">More</button>
-                                </div>
-                                <div class="col-md-3 project-item">
-                                    <img src="image\Sentiment-anylisis.jpeg" alt="Customer Feedback Analysis Application" class="img-fluid">
-                                    <h5>Customer Feedback Analysis Application</h5>
-                                    <p>Developed a Python application using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of customer feedback in real-time. </p>
-                                    <button type="button" class="btn btn-primary more-btn rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Customer Feedback Analysis Application" data-img="image\Sentiment-anylisis.jpeg" data-description="Developed a Python application using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of customer feedback in real-time. This tool provides businesses with actionable insights into customer sentiment, helping improve products and services based on detailed emotional analysis.">More</button>
-                                </div>
+                <div class="row">
+                    <!-- Realtime-Stock-Analysis -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Realtime-Stock-Analysis" data-img="image/Real-time-stock-filter.jpg" data-description="Achieved a 70% compound annual growth rate (CAGR) with 80% accuracy by selecting top-performing stocks through a time series analysis with a five-year historical backtest. This project demonstrates a robust approach to identifying high-growth investment opportunities based on detailed historical data.">
+                            <div class="img">
+                                <img src="image/Real-time-stock-filter.jpg" alt="Realtime-Stock-Analysis" class="card__image">
+                            </div>
+                            <div class="text">
+                                <h3 class="h3">Realtime-Stock-Analysis</h3>
+                                <p class="p">Achieved 70% CAGR with 80% accuracy by selecting top-performing stocks using time series analysis</p>
                             </div>
                         </div>
-                        
                     </div>
-                </div>
-            </div>
         
-       
-            <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- Backorder Prediction System -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Backorder Prediction System" data-img="image/backorder-image.jpg" data-description="Developed a machine learning model to predict product backorders, improving inventory management and reducing stockouts by 35%.">
+                            <div class="img">
+                                <img src="image/backorder-image.jpg" alt="Backorder Prediction System" class="card__image">
+                            </div>
+                            <div class="text">
+                                <h3 class="h3">Backorder Prediction System</h3>
+                                <p class="p">Developed a machine learning model to predict product backorders, improving inventory management and reducing stockouts by 35%.</p>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <img src="" alt="Project Image" class="img-fluid" id="projectModalImg">
-                            <p id="projectModalDesc"></p>
+                    </div>
+        
+                    <!-- Financial Analysis Platform -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Financial Analysis and Portfolio Management Platform" data-img="image/Financial.jpg" data-description="Developed an AI-based web application integrating stock screening and portfolio allocation recommendations. Achieved enhanced user engagement through real-time stock data visualization and personalized investment advice.">
+                            <div class="img">
+                                <img src="image/Financial.jpg" alt="Financial Analysis and Portfolio Management Platform" class="card__image">
+                            </div>
+                            <div class="text">
+                                <h3 class="h3">Financial Analysis Platform</h3>
+                                <p class="p">Developed an AI-based web application for stock screening and portfolio management with real-time data visualization.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Telegram Referral Bot -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Telegram-Based Referral Program Bot" data-img="image\telegram_git123.gif" data-description="Developed an advanced Telegram bot to automate refer-and-earn programs using asynchronous programming. This automation increased user engagement by 50% and successful referrals by 30%, streamlining the process and reducing manual tasks.">
+                            <div class="img">
+                                <img src="image/telegram_bot.jpg" alt="Telegram-Based Referral Program Bot" class="card__image">
+                            </div>
+                            <div class="text">
+                                <h3 class="h3">Telegram Referral Bot</h3>
+                                <p class="p">Automated refer-and-earn programs, increasing user engagement by 50% and successful referrals by 30%.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Sentiment Analysis Tool -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Customer Feedback Analysis Application" data-img="image/Sentiment-anylisis.jpeg" data-description="Developed a Python application using TKinter, speech recognition, and DistilBERT for high-accuracy sentiment analysis of customer feedback in real-time. This tool provides businesses with actionable insights into customer sentiment, helping improve products and services based on detailed emotional analysis.">
+                            <div class="img">
+                                <img src="image/Sentiment-anylisis.jpeg" alt="Customer Feedback Analysis Application" class="card__image">
+                            </div>
+                            <div class="text">
+                                <h3 class="h3">Sentiment Analysis Tool</h3>
+                                <p class="p">Created a real-time sentiment analysis application for customer feedback using speech recognition and DistilBERT.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" alt="Project Image" class="img-fluid" id="projectModalImg">
+                        <p id="projectModalDesc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section id="skills" class="skills">
             <div class="container">
                 <h2 class="section-title">Skills and Technologies</h2>
