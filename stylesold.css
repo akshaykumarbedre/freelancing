@@ -49,9 +49,6 @@ body {
     max-width: 100%;
     border-radius: 10px;
 }
-.name{
-    font-weight: bold;
-}
 
 .features {
     padding: 60px 0;
@@ -72,12 +69,6 @@ body {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.profitpic{
-    width: 100%;
-    margin: 30px;
-    
-}
-
 
 .success-stats {
     padding: 60px 0;
@@ -181,10 +172,8 @@ body {
 .our-projects .carousel-item img {
     border-radius: 10px;
     margin-bottom: 20px;
-
-  
-
 }
+
 .service-item p{
     text-align: left;
    
@@ -243,7 +232,7 @@ footer a:hover {
 }
 
 body {
-
+    font-family: 'Arial', sans-serif;
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
@@ -351,7 +340,7 @@ footer {
     padding: 3.75rem 0;
 }
 .faq {
-
+    font-family: Arial, sans-serif;
     max-width: 70%;
     margin: 0 auto;
     padding: 20px;
@@ -411,7 +400,7 @@ footer {
   }
   
   #about.about-me .container {
-    max-width: 1000px;
+    max-width: 800px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -426,17 +415,14 @@ footer {
     }
   
     #about.about-me .image {
-   
+      margin-left: 0;
       margin-top: 20px;
     }
   }
   
 
-.our-projects {
-    padding: 80px 0;
-}
 
-.our-projects .card {
+  .our-projects .card {
     width: 100%;
     height: 550px;
     background: white;
@@ -447,7 +433,6 @@ footer {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 
 .our-projects .card:hover {
@@ -479,47 +464,14 @@ footer {
 .our-projects .card .text .h3 {
     font-size: 18px;
     font-weight: 600;
-    color: var(--text-color);
+    color: black;
     margin-bottom: 10px;
 }
 
 .our-projects .card .text .p {
-    color: var(--light-text-color);
+    color: #999999;
     font-size: 14px;
     margin-bottom: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-    .our-projects .card {
-        height: 500px;
-    }
-}
-
-@media (max-width: 992px) {
-    .our-projects .card {
-        height: 450px;
-    }
-}
-
-@media (max-width: 768px) {
-    .our-projects .card {
-        height: auto;
-    }
-
-    .our-projects .card .img {
-        height: 300px;
-    }
-
-    .our-projects .card .text {
-        height: auto;
-    }
-}
-
-@media (max-width: 576px) {
-    .our-projects .card .img {
-        height: 250px;
-    }
 }
 
 #projectModal .modal-dialog {
@@ -535,80 +487,4 @@ footer {
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
-}
-.skills {
-    padding: 5rem 0;
-    background-color: var(--background-color);
-    transition: background-color 0.3s;
-}
-
-.skills .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.skills .section-title {
-    font-size: 2.25rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3.125rem;
-    color: var(--text-color);
-}
-
-.skills .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.875rem;
-}
-
-.skills .skill-category {
-    background-color: var(--background-color);
-    border-radius: 0.625rem;
-    padding: 1.875rem;
-    box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, background-color 0.3s;
-}
-
-.skills .skill-category:hover {
-    transform: translateY(-0.3125rem);
-}
-
-.skills .skill-category h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.9375rem;
-    color: var(--primary-color);
-}
-
-.skills .skill-category ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skills .skill-category li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: var(--light-text-color);
-}
-
-@media (max-width: 768px) {
-    .skills .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-body.dark-mode .skills {
-    background-color: var(--background-color);
-}
-
-body.dark-mode .skills .skill-category {
-    background-color: #333;
-}
-
-body.dark-mode .skills .skill-category h3 {
-    color: var(--primary-color);
-}
-
-body.dark-mode .skills .skill-category li {
-    color: var(--light-text-color);
 }
